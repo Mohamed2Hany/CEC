@@ -14,14 +14,14 @@
 </head>
 <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
-        <a class="navbar-brand col-md-6 " href="#">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex " style="background-color:white">
+        <a class="navbar-brand " href="#">
             <img  src="https://blogger.googleusercontent.com/img/a/AVvXsEgKnrOHNcP45SUVeBn8fwki7XqGiz_QAS7UXQem0CxkB4Mw65yYMLNZlyyfY3Qct4dQKJX_j1K0V5PTnlkZWWJu2oIbtbcUQ1GjDkAqtCh1_BAUiK5P8rR-zxq0a8mFZ-mWaPBj1W89aqTYgsq0VTvqy0UB4YPi2RhAbwTnNQ62NrOWHYyx4HtTCNQX" width="170" height="80" class="d-inline-block align-top" alt="CEC">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse col-md-6" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse " id="navCollapse" >
             <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link"  style="color:rgb(12,12,86)" " href="http://127.0.0.1:5500/CEC-Home.html"><i class="fa fa-fw fa-home"></i>Home </a>
@@ -30,9 +30,9 @@
                 <a class="nav-link"  style="color:rgb(12,12,86)" href="http://127.0.0.1:5500/CEC-Services.html "><i class="fa fa-fw fa-plug"></i>Services</a>
               </li>
               <li class="nav-item dropdown">
-                    <button class="dropbtn dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-fw fa-building"></i>Projects</button>
+                    <a class=" dropdown-toggle nav-link" style="color:rgb(12,12,86)" href="#" data-toggle="dropdown" role="button"><i class="fa fa-fw fa-building"></i>Projects</a>
                     <div class="dropdown-content">
-                      <a href="#">Projects maps</a>
+                      <a href="#">Projects Map</a>
                       <a href="#">Buildings</a>
                       <a href="#">Fitouts</a>
                       <a href="#">Infrastructure</a>
@@ -53,7 +53,6 @@
           </div>
         
     </nav> 
-    <br>
     <div class="row">
      <div class="col-md-8" style="background-color:rgb(12,12,86) ">
         <h1>Overview</h1>
@@ -100,7 +99,10 @@
     <div class="row">
         <h1 style="color:#ffc400">THIRD ROW</h1>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    
   <script>
     const swiper = new Swiper('.swiper', {
       autoplay:{
@@ -123,6 +125,7 @@
   },
 
 });
+
   </script>
 </body>
 </html>
