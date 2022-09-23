@@ -1,69 +1,218 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CEC-Clients</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="CEC.css" media="all">
-    <script src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CEC-Clients</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CEC.css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src='main.js'></script>
+ 
 </head>
 <body>
-    <div class="container-fluid">
-      <row class="row-1 d-flex justify-content-left">
-        <column class="column-1 d-flex justify-content-left">
-          <img loading="logo" class="img-responsive" src="https://blogger.googleusercontent.com/img/a/AVvXsEgKnrOHNcP45SUVeBn8fwki7XqGiz_QAS7UXQem0CxkB4Mw65yYMLNZlyyfY3Qct4dQKJX_j1K0V5PTnlkZWWJu2oIbtbcUQ1GjDkAqtCh1_BAUiK5P8rR-zxq0a8mFZ-mWaPBj1W89aqTYgsq0VTvqy0UB4YPi2RhAbwTnNQ62NrOWHYyx4HtTCNQX" alt="CEC">
-        </column>
-        <column class="column-2 d-flex justify-content-right">
-          
-          <div class="dropdown">
-            <form action="http://127.0.0.1:5500/CEC-Home.html">
-              <button class="dropbtn">Home</button>
-          </form>
-            <div class="dropdown-content">
-            </div>
-          </div>
-  
-          <div class="dropdown">
-            <form action="http://127.0.0.1:5500/CEC-Services.html">
-              <button class="dropbtn">Services</button>
-          </form>
-            <div class="dropdown-content"></div>
-          </div>
-  
-          <div class="dropdown">
-            <button class="dropbtn">Projects</button>
-            <div class="dropdown-content">
-              <a href="#">Projects maps</a>
-              <a href="#">Buildings</a>
-              <a href="#">Fitouts</a>
-              <a href="#">Infrastructure</a>
-              <a href="#">Industrial</a>
-              <a href="#">Design Review<br>
-                                &<br>
-                          Value Engineering
-              </a>
-            </div>
-          </div>
-  
-          <div class="dropdown">
-            <form action="http://127.0.0.1:5500/CEC-Clients.html">
-              <button class="dropbtn">Clients</button>
-            </form>
-            <div class="dropdown-content">
-
-            </div>
-          </div>
-  
-          <div class="dropdown">
-            <form action="http://127.0.0.1:5500/CEC-Contacts.html">
-              <button class="dropbtn">Contacts</button>
-              </form>            
-              <div class="dropdown-content">
-              </div>
-          </div>
-        </column> 
-      </row>          
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex " style="background-color:white">
+      <a class="navbar-brand " href="#">
+        <img  src="Images\Creative Engineering Consultant-Logo.jpeg" width="170" height="80" class="d-inline-block align-top" alt="CEC">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navCollapse" >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link"  style="color:rgb(12,12,86)" href="CEC-Home.html"><i class="fa fa-fw fa-home"></i>Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  style="color:rgb(12,12,86)" href="CEC-Services.html"><i class="fa fa-fw fa-plug"></i>Services</a>
+            </li>
+            <li class="nav-item dropdown">
+                  <a class=" dropdown-toggle nav-link" style="color:rgb(12,12,86)" href="#" data-toggle="dropdown" role="button"><i class="fa fa-fw fa-building"></i>Projects</a>
+                  <div class="dropdown-content">
+                    <a href="Projects-Map.html">Projects Map</a>
+                    <a href="Buildings.html">Buildings</a>
+                    <a href="Fitouts.html">Fitouts</a>
+                    <a href="Infrastructure.html">Infrastructure</a>
+                    <a href="Industrial.html">Industrial</a>
+                    <a href="Design-Review.html">Design Review<br>
+                                      &<br>
+                                Value Engineering
+                    </a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  style="color:rgb(12,12,86)" href="CEC-Clients.html"><i class="fa fa-fw fa-group"></i>Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  style="color:rgb(12,12,86)" href="CEC-Contact Us.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      
+  </nav> 
+    <div class="row clientsrows">
+     <div class="col-md-2" style="padding:10px">
+      <img src="clients logos\microsoft.png" class="img-resposive" alt="microsoft" width="140" height="30">
     </div>
-  </body>
-</html>
+    <div class="col-md-2" style="padding:10px">
+      <img src="clients logos\google.png" class="img-responsive" alt="google" width="120" height="30">
+    </div>
+    <div class="col-md-2" style="padding:10px">
+      <img src="clients logos\british council.png" class="img-responsive" alt="british council" width="140" height="30">
+    </div>
+    <div class="col-md-2" style="padding:10px">
+      <img src="clients logos\cisco.png" class="img-responsive" alt="cisco" width="140" height="50">
+    </div>
+    <div class="col-md-2" style="padding:10px">
+      <img src="clients logos\dell.png" class="img-responsive" alt="dell" width="140" height="30">
+    </div>
+    <div class="col-md-2" style="padding:10px">
+      <img src="clients logos\nestle.png" class="img-responsive" alt="nestle" width="140" height="30">
+    </div>
+    </div>
+    <div class="row clientsrows">
+      <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\deutsche bank.png" class="img-resposive" alt="deutsche bank" width="140" height="40">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\oracle.png" class="img-responsive" alt="oracle" width="120" height="50">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\globaltronics.jpg" class="img-responsive" alt="globaltronics" width="140" height="40">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\thomson.png" class="img-responsive" alt="thomson" width="150" height="40">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\white and case.png" class="img-responsive" alt="white and case" width="140" height="20">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\vodafone.png" class="img-responsive" alt="vodafone" width="140" height="30">
+     </div>
+    </div>
+
+     <div class="row clientsrows">
+      <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\elaraby.png" class="img-resposive" alt="elaraby" width="140" height="30">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\rain.jpg" class="img-responsive" alt="rain" width="120" height="30">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\hassan allam.png" class="img-responsive" alt="hassan allam" width="140" height="30">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\modon.png" class="img-responsive" alt="modon" width="120" height="40">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\bupa.png" class="img-responsive" alt="bupa" width="130" height="50">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\ccl.png" class="img-responsive" alt="ccl" width="140" height="40">
+     </div>
+    </div>
+
+     <div class="row clientsrows">
+      <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\ahli united bank.jpg" class="img-resposive" alt="ahli united bank" width="130" height="30">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\mckinsey.png" class="img-responsive" alt="mckinsey" width="100" height="60">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\rsa.png" class="img-responsive" alt="rsa" width="140" height="30">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\sewedy.png" class="img-responsive" alt="sewedy" width="130" height="30">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\terra.png" class="img-responsive" alt="terra" width="130" height="70">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\teda suez.jpg" class="img-responsive" alt="teda suez" width="140" height="40">
+     </div>
+    </div>
+
+     <div class="row clientsrows">
+      <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\areeba.png" class="img-resposive" alt="areeba" width="130" height="50">
+     </div>
+     <div class="col-md-2" style="padding:5px">
+       <img src="clients logos\aia.png" class="img-responsive" alt="aia" width="120" height="80">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\polaris parks.png" class="img-responsive" alt="polaris parks" width="140" height="80">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\eagle hills.png" class="img-responsive" alt="eagle hills" width="120" height="110">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\abraj bay.jpg" class="img-responsive" alt="abraj bay" width="140" height="90">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\ora.jpg" class="img-responsive" alt="ora" width="140" height="90">
+     </div>
+    </div>
+
+     <div class="row clientsrows">
+      <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\ey.png" class="img-resposive" alt="ey" width="140" height="100">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\madina medical center.png" class="img-responsive" alt="madina medical center" width="120" height="90">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\perlita gardens.png" class="img-responsive" alt="perlita gardens" width="140" height="70">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\nub.png" class="img-responsive" alt="nub" width="140" height="100">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\almorshedy.png" class="img-responsive" alt="almorshedy" width="140" height="90">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\jazan.jpg" class="img-responsive" alt="jazan" width="140" height="100">
+     </div>
+    </div>
+
+
+     <div class="row clientsrows">
+      <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\alshareef.jpg" class="img-resposive" alt="alshareef" width="140" height="100">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\bonyan.jpg" class="img-responsive" alt="bonyan" width="120" height="90">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\bayat.jpg" class="img-responsive" alt="bayat" width="140" height="100">
+     </div>
+     <div class="col-md-2" style="padding:10px">
+       <img src="clients logos\emaar.png" class="img-responsive" alt="emaar" width="140" height="110">
+     </div>
+    </div>
+
+
+
+    </div>
+    <div class="row footer">
+     
+      <div class="col-md-5 d-flex align-items-center">
+       "We think beyond tomorrow to anticipate future challenges"
+      </div>
+      <div class="col-md-4">
+       <h6>Contact Us:</h6>
+       <i class="fa fa-fw fa-map-marker"></i> Address:<br>
+       50 Al-Hegaz St., Mohandseen, Giza<br>
+      </div>
+      <div class="col-md-3">
+       <i class="fa fa-fw fa-phone"></i>Mobile:+201222266880<br>
+        <i class="fa fa-fw fa-phone"></i>Telephone: 02 33020004<br>
+        <i class="fa fa-fw fa-envelope"></i>Email: mohamed@cecegy.com
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    </div>
+    </body>
+    

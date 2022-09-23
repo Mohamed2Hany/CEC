@@ -1,74 +1,233 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CEC-Services</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="CEC.css" media="all">
-    <script src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CEC-Services</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CEC.css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src='main.js'></script>
+
 </head>
+
 <body>
-    <div class="container-fluid">
-      <row class="row-1 d-flex justify-content-left">
-        <column class="column-1 d-flex justify-content-left">
-          <img loading="logo" class="img-responsive" src="https://blogger.googleusercontent.com/img/a/AVvXsEgKnrOHNcP45SUVeBn8fwki7XqGiz_QAS7UXQem0CxkB4Mw65yYMLNZlyyfY3Qct4dQKJX_j1K0V5PTnlkZWWJu2oIbtbcUQ1GjDkAqtCh1_BAUiK5P8rR-zxq0a8mFZ-mWaPBj1W89aqTYgsq0VTvqy0UB4YPi2RhAbwTnNQ62NrOWHYyx4HtTCNQX" alt="CEC">
-        </column>
-        <column class="column-2 d-flex justify-content-right">
-          
-            <div class="dropdown">
-              <form action="http://127.0.0.1:5500/CEC-Home.html">
-                <button class="dropbtn">Home</button>
-            </form>
-              <div class="dropdown-content">
-              </div>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex " style="background-color:white">
+      <a class="navbar-brand " href="#">
+        <img src="Images\Creative Engineering Consultant-Logo.jpeg" width="170" height="80"
+          class="d-inline-block align-top" alt="CEC">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+        aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color:rgb(12,12,86)" href="CEC-Home.html"><i class="fa fa-fw fa-home"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:rgb(12,12,86)" href="CEC-Services.html"><i
+                class="fa fa-fw fa-plug"></i>Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class=" dropdown-toggle nav-link" style="color:rgb(12,12,86)" href="#" data-toggle="dropdown"
+              role="button"><i class="fa fa-fw fa-building"></i>Projects</a>
+            <div class="dropdown-content">
+              <a href="Projects-Map.html">Projects Map</a>
+              <a href="Buildings.html">Buildings</a>
+              <a href="Fitouts.html">Fitouts</a>
+              <a href="Infrastructure.html">Infrastructure</a>
+              <a href="Industrial.html">Industrial</a>
+              <a href="Design-Review.html">Design Review<br>
+                &<br>
+                Value Engineering
+              </a>
             </div>
-    
-            <div class="dropdown">
-              <form action="http://127.0.0.1:5500/CEC-Services.html">
-                <button class="dropbtn">Services</button>
-            </form>
-              <div class="dropdown-content"></div>
-            </div>
-    
-            <div class="dropdown">
-              <button class="dropbtn">Projects</button>
-              <div class="dropdown-content">
-                <a href="#">Projects maps</a>
-                <a href="#">Buildings</a>
-                <a href="#">Fitouts</a>
-                <a href="#">Infrastructure</a>
-                <a href="#">Industrial</a>
-                <a href="#">Design Review<br>
-                                  &<br>
-                            Value Engineering
-                </a>
-              </div>
-            </div>
-    
-            <div class="dropdown">
-                <form action="http://127.0.0.1:5500/CEC-Clients.html">
-                  <button class="dropbtn">Clients</button>
-                </form>
-                <div class="dropdown-content">
-    
-                </div>
-              </div>
-    
-            <div class="dropdown">
-              <form action="http://127.0.0.1:5500/CEC-Contacts.html">
-                <button class="dropbtn">Contacts</button>
-                </form>            
-                <div class="dropdown-content">
-                </div>
-            </div>
-          </column> 
-      </row> 
-      <row class="row-1Services d-flex justify-content-center">
-        <img class="img1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo-dk83OO5bkZfBWVvFFQFXL8JQi33v8qKjxrKcIKRI22HyUmF13LsValiIaHUgu3Ov5WMY-dhPsoVxGTsOhmFP4UIcHdGVVdTj4yyBhJrQw7_rf_IMV8mp4IBrLAWry9qxyWy9Kj5zeKu774xyhVmWD6G1PK7dCZ0-lqLPlZAU526Okh-kp-NlMnL/s320/Map.jpeg">
-        </img>
-      </row>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:rgb(12,12,86)" href="CEC-Clients.html"><i
+                class="fa fa-fw fa-group"></i>Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:rgb(12,12,86)" href="CEC-Contact Us.html"><i
+                class="fa fa-fw fa-envelope"></i>Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="row" style="background-color:rgb(238, 238, 238) ;padding: 5px;width: auto;">
+      <h1 class="headings">Services</h1>
+      <p class="paragraphs">As specialists in Electro-Mechanical systems and
+        their design, <strong>Cr</strong><span class="yellowspan">e</span><strong>ativ</strong><span
+          class="yellowspan">e</span>
+        <span style="color:rgb(17, 17, 129)">Engineering Consultants</span> effectively plans and designs
+        solutions that fulfill project requirements while
+        minimizing operational costs. The firm's vast
+        experience and diverse capabilities in this field
+        assures each project is properly planned when completed
+      </p>
+      <p class="paragraphs"><strong>Cr</strong><span class="yellowspan">e</span><strong>ativ</strong><span
+          class="yellowspan">e</span> <span style="color:rgb(17, 17, 129)">Engineering Consultants</span> serves the
+        global markets of the MEP activities as
+        follows:</p>
+      <div class="col-md-6">
+        <div class="col-md-8">
+          <h2>HVAC</h2>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Comfort Heating and Cooling</li>
+            <li class="list-group-item list-group-item-action">Refrigeration</li>
+            <li class="list-group-item list-group-item-action">Building Management System</li>
+            <li class="list-group-item list-group-item-action">Kitchen And Laundry Ventilation</li>
+            <li class="list-group-item list-group-item-action">Clean Rooms Application</li>
+            <li class="list-group-item list-group-item-action">Industrial Ventilation</li>
+          </ul>
+          <h2>Electrical</h2>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">MV/LV Electrical Substations and
+              Networks</li>
+            <li class="list-group-item list-group-item-action">Standby diesel generator sets</li>
+            <li class="list-group-item list-group-item-action">Normal & Emergency Power Supply and Distribution Networks</li>
+            <li class="list-group-item list-group-item-action">Interior & Exterior Lighting Installations</li>
+            <li class="list-group-item list-group-item-action">Power Outlets and Wiring Accessories</li>
+            <li class="list-group-item list-group-item-action">Earthing and lightning protection
+              systems
+            </li>
+          </ul>
+          <h2>Low Current</h2>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Fire Detection and Alarm System</li>
+            <li class="list-group-item list-group-item-action">Telecommunication System</li>
+            <li class="list-group-item list-group-item-action">Public Address and Sound system</li>
+            <li class="list-group-item list-group-item-action">Security systems including CCTV,
+              Access Control Systems</li>
+            <li class="list-group-item list-group-item-action">SMATV System</li>
+            <li class="list-group-item list-group-item-action">Intercom System</li>
+            <li class="list-group-item list-group-item-action">Parking control system</li>
+            <li class="list-group-item list-group-item-action">Master Clock System</li>
+            <li class="list-group-item list-group-item-action">Nurse Call System</li>
+            <li class="list-group-item list-group-item-action">Audio Visual System</li>
+          </ul>
+          <h2>Fire Fighting</h2>
+          <!--  to review -->
+          <ul class="list-group-item list-group-item-action list-group-item list-group-item-action-action">
+            <li class="list-group-item list-group-item-action list-group-item list-group-item-action-action">Fire Fighting Network</li>
+            <li class="list-group-item list-group-item-action">Standpipes</li>
+            <li class="list-group-item list-group-item-action">Sprinklers</li>
+            <li class="list-group-item list-group-item-action">Fire Extinguishers</li>
+            <li class="list-group-item list-group-item-action">Clean Agent Systems</li>
+            <li class="list-group-item list-group-item-action">Special Fire Systems For Extra
+              Hazardous Areas
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-8">
+          <h2>Plumbing</h2>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Drainage System</li>
+            <li class="list-group-item list-group-item-action">Water Supply</li>
+            <li class="list-group-item list-group-item-action">LPG System</li>
+            <li class="list-group-item list-group-item-action">Fuel System</li>
+            <li class="list-group-item list-group-item-action">Compressed Air and Vacuum</li>
+            <li class="list-group-item list-group-item-action">Medical gases</li>
+          </ul>
+          <h2>Infrastructure</h2>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">MV/LV Electrical Substations</li>
+            <li class="list-group-item list-group-item-action">Power distribution networks</li>
+            <li class="list-group-item list-group-item-action">Roadway and Area Lighting</li>
+            <li class="list-group-item list-group-item-action">Communication Networks/li>
+            <li class="list-group-item list-group-item-action">Water Supply Networks</li>
+            <li class="list-group-item list-group-item-action">Chilled Water Networks/li>
+            <li class="list-group-item list-group-item-action">Fire Fighting Networks/li>
+            <li class="list-group-item list-group-item-action">Irrigation Networks/li>
+            <li class="list-group-item list-group-item-action">Natural gas network/li>
+          </ul>
+          <h2>Special Systems</h2>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Smoke Management System</li>
+            <li class="list-group-item list-group-item-action">Vertical Transportation Systems</li>
+            <li class="list-group-item list-group-item-action">Swimming Pools</li>
+            <li class="list-group-item list-group-item-action">Central Laundries/li>
+            <li class="list-group-item list-group-item-action">Central Kitchens</li>
+            <li class="list-group-item list-group-item-action">Medical Gas Systems</li>
+            <li class="list-group-item list-group-item-action">Sewage and Water Treatment Plants</li>
+            <li class="list-group-item list-group-item-action">District Cooling Plansts</li>
+            <li class="list-group-item list-group-item-action">Desalination Plants</li>
+            <li class="list-group-item list-group-item-action">Water Pumping Stations</li>
+            <li class="list-group-item list-group-item-action">Sewage Pumping Stations</li>
+            <li class="list-group-item list-group-item-action">Workshops Layouts and
+              Equipment</li>
+            <li class="list-group-item list-group-item-action">Special Airport Systems</li>
+            <li class="list-group-item list-group-item-action">Vehicle production lines</li>
+            <li class="list-group-item list-group-item-action">Vehicle service centers design and management</li>
+            <li class="list-group-item list-group-item-action">Energy management systems</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </body>
-</html>
+    <div class="row" style="background-color:rgb(238, 238, 238) ;padding: 5px;width: auto;">
+      <h3 style="color:#ffc400"> Scope of Services</h3>
+      <p class="paragraphs">
+        The Electro-Mechanical Services offered by <strong>Cr</strong><span
+          class="yellowspan">e</span><strong>ativ</strong><span class="yellowspan">e</span> <span
+          style="color:rgb(17, 17, 129)">Engineering Consultants</span> are
+        identified as follows:
+        <br>
+      </p>
+      <div class="col-md-6">
+        <div class="col-md-8">
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Feasibility studies and Systems selection</li>
+            <li class="list-group-item list-group-item-action">Preliminary and concept design</li>
+            <li class="list-group-item list-group-item-action">Schematic and detailed design and
+              documentation</li>
+            <li class="list-group-item list-group-item-action">Specification, Bill of Quantities and
+              scheduling</li>
+            <li class="list-group-item list-group-item-action">Construction phase services</li>
+            <li class="list-group-item list-group-item-action">Budget estimation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-8">
+
+          <li class="list-group-item list-group-item-action">7. Post construction evaluation</li>
+          <li class="list-group-item list-group-item-action">8. Expert witness services</li>
+          <li class="list-group-item list-group-item-action">9. Design review and Value Engineering</li>
+          <li class="list-group-item list-group-item-action">10. Testing, adjusting and balancing of MEP
+            works</li>
+          <li class="list-group-item list-group-item-action">11. Equipment and systems start up and commissioning </li>
+          <li class="list-group-item list-group-item-action">12. Shop and as- built drawings</li>
+
+        </div>
+      </div>
+    </div>
+    <div class="row footer">
+
+      <div class="col-md-5 d-flex align-items-center">
+        "We think beyond tomorrow to anticipate future challenges"
+      </div>
+      <div class="col-md-4">
+        <h6>Contact Us:</h6>
+        <i class="fa fa-fw fa-map-marker"></i> Address:<br>
+        50 Al-Hegaz St., Mohandseen, Giza<br>
+      </div>
+      <div class="col-md-3">
+        <i class="fa fa-fw fa-phone"></i>Mobile:+201222266880<br>
+        <i class="fa fa-fw fa-phone"></i>Telephone: 02 33020004<br>
+        <i class="fa fa-fw fa-envelope"></i>Email: mohamed@cecegy.com
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+  </div>
+</body>
